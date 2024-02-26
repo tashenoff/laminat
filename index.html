@@ -1,0 +1,750 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+
+
+        tailwind.config = {
+            theme: {
+
+
+
+                container: {
+                    padding: {
+                        DEFAULT: '1rem',
+                        sm: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem',
+                    },
+                },
+
+
+
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <style>
+        .typed-cursor {
+            font-size: 48px;
+
+        }
+
+
+        .swiper {
+            width: 100%;
+            /* height: 300px; */
+        }
+
+        .bg-home {
+            background-image: url(img/bg.jpg);
+            background-size: cover;
+            background-position-y: center;
+            position: relative;
+            overflow: hidden;
+
+            
+
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .bg-home {
+            
+            background-position: 1369px bottom;
+            }
+
+        }
+
+     
+
+        .bg-home::after {
+            background-color: blue;
+            content: "";
+            position: absolute;
+            top: 0;
+            z-index: 30;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+
+
+        }
+
+        .bg-adver {
+            background-image: url(img/adver.png);
+            background-size: cover;
+            background-position-y: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, #c7032d 50%, #ec5656 50%);
+            bottom: 0;
+            left: -50%;
+            opacity: .5;
+            position: absolute;
+            right: -50%;
+            top: 0;
+            z-index: 2;
+        }
+
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+
+        .bg3 {
+            animation-duration: 5s;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-25%);
+            }
+
+            100% {
+                transform: translateX(25%);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="bg-white py-5 absolute top-0 w-full bg-opacity-50 z-50">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-center">
+                <div class="grid lg:grid-cols-3 w-full grid-cols-3">
+                    <div class="lg:flex w-full items-center justify-center hidden">
+
+                        <div class="flex items-center bg-white rounded-full p-2">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                            </svg>
+
+
+                            <a href="" class="number font-bold mx-3">8 700 570 50 70 </a>
+                        </div>
+
+
+                        <div class="flex items-center bg-white rounded-full p-2 ml-5">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                            </svg>
+
+
+                            <a href="" class="number font-bold mx-3">8 700 570 50 70 </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex w-full items-center lg:justify-center">
+                        <img class="lg:w-[150px] w-[100px]" src="img/logos.svg" alt="">
+                    </div>
+                    <div class="flex w-full items-center justify-center lg:col-span-1 col-span-2">
+                        <div class="flex items-center ml-5 bg-red-500 py-3 px-5 rounded-full text-white font-bold ">
+
+
+
+
+                            <?xml version="1.0" encoding="iso-8859-1"?>
+                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg height="20px" width="20px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 418.135 418.135" xml:space="preserve">
+                                <g>
+                                    <path style="fill:#fff;" d="M198.929,0.242C88.5,5.5,1.356,97.466,1.691,208.02c0.102,33.672,8.231,65.454,22.571,93.536
+                        L2.245,408.429c-1.191,5.781,4.023,10.843,9.766,9.483l104.723-24.811c26.905,13.402,57.125,21.143,89.108,21.631
+                        c112.869,1.724,206.982-87.897,210.5-200.724C420.113,93.065,320.295-5.538,198.929,0.242z M323.886,322.197
+                        c-30.669,30.669-71.446,47.559-114.818,47.559c-25.396,0-49.71-5.698-72.269-16.935l-14.584-7.265l-64.206,15.212l13.515-65.607
+                        l-7.185-14.07c-11.711-22.935-17.649-47.736-17.649-73.713c0-43.373,16.89-84.149,47.559-114.819
+                        c30.395-30.395,71.837-47.56,114.822-47.56C252.443,45,293.218,61.89,323.887,92.558c30.669,30.669,47.559,71.445,47.56,114.817
+                        C371.446,250.361,354.281,291.803,323.886,322.197z" />
+                                    <path style="fill:#fff;" d="M309.712,252.351l-40.169-11.534c-5.281-1.516-10.968-0.018-14.816,3.903l-9.823,10.008
+                        c-4.142,4.22-10.427,5.576-15.909,3.358c-19.002-7.69-58.974-43.23-69.182-61.007c-2.945-5.128-2.458-11.539,1.158-16.218
+                        l8.576-11.095c3.36-4.347,4.069-10.185,1.847-15.21l-16.9-38.223c-4.048-9.155-15.747-11.82-23.39-5.356
+                        c-11.211,9.482-24.513,23.891-26.13,39.854c-2.851,28.144,9.219,63.622,54.862,106.222c52.73,49.215,94.956,55.717,122.449,49.057
+                        c15.594-3.777,28.056-18.919,35.921-31.317C323.568,266.34,319.334,255.114,309.712,252.351z" />
+                                </g>
+                            </svg>
+
+
+
+                            <a href="#" class="button lg:text-[14px] text-[13px] ml-2">Написать в whatsapp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="bg-home relative lg:mb-10">
+        <div class="container mx-auto">
+            <div class="flex lg:h-[900px] h-[700px] w-full items-center justify-center text-white">
+
+                <div class="w-full text-center py-5 relative z-50">
+                    <h3 class="lg:text-[48px] text-[32px] font-bold uppercase ">ламинат в астане</h3>
+                    <span class="lg:text-[48px] text-[32px] font-bold mb-20 uppercase" id="typed-text"></span>
+                    <p class="lg:text-[20px] text-[18px] lg:mb-20 my-10">
+                        Пожалуй у нас самый большой выбор в Казахстане напольных покрытий и дверей по цене<br>
+                        производителя! Более 10 лет на рынке Казахстана и 100 000 довольных покупателей!
+                    </p>
+
+                    <a href=""
+                        class="button bg-red-500 py-5 px-10 mt-20 font-bold uppercase text-[14px] rounded-full">Связаться
+                        с нами</a>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class=" w-full shadow-lg border border-gray-200 lg:border-opacity-0 border-opacity-25 lg:p-8 mr-2 relative z-50 lg:bottom-0 bottom-14 lg:bg-white  lg:rounded-full rounded-lg">
+
+                <ul class="grid lg:grid-cols-4 gap-4">
+                    <li class="flex items-center lg:p-0 p-5 text-white lg:text-black text-[14px]">
+                        <img class="w-[60px] lg:bg-red-500 lg:border-0 lg:border-opacity-0 border-opacity-25 border border-white rounded-full p-2"
+                            src="img/1.svg" alt="">
+                        <span class="ml-5 font-bold uppercase">
+                            Гарантия 20 лет
+                        </span>
+                    </li>
+
+                    <li class="flex items-center lg:p-0 p-5 text-white lg:text-black text-[14px]">
+                        <img class="w-[60px] lg:bg-red-500 lg:border-0 lg:border-opacity-0 border-opacity-25 border border-white rounded-full p-2"
+                            src="img/4.svg" alt="">
+                        <span class="ml-5 font-bold uppercase">
+                            Акционные предложения
+                        </span>
+                    </li>
+                    <li class="flex items-center lg:p-0 p-5 text-white lg:text-black text-[14px]">
+                        <img class="w-[60px] lg:bg-red-500 lg:border-0 lg:border-opacity-0 border-opacity-25 border border-white rounded-full p-2"
+                            src="img/3.svg" alt="">
+                        <span class="ml-5 font-bold uppercase">
+                            Широкий ассортимент
+                        </span>
+                    </li>
+                    <li class="flex items-center lg:p-0 p-5 text-white lg:text-black text-[14px]">
+                        <img class="w-[60px] lg:bg-red-500 lg:border-0 lg:border-opacity-0 border-opacity-25 border border-white rounded-full p-2"
+                            src="img/2.svg" alt="">
+                        <span class="ml-5 font-bold uppercase">
+                            Лучшее качество
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lg:bg-white absolute bottom-0 w-full h-[70px] z-40 left-0"></div>
+
+    </section>
+
+
+    <section class="my-20">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2">
+                <div class="order-2 lg:order-0">
+                    <img src="img/lc.jpg" alt="">
+                </div>
+                <div class="">
+                    <h3 class="text-[36px] font-bold uppercase ">У нас самый большой<br> выбор ламината</h3>
+
+                    <div class="bg-red-500 w-[30px] h-[5px] my-10"></div>
+
+                    <p>
+                        Мы гордимся представлять вам самый разнообразный ассортимент ламинатных покрытий на рынке.
+                        Независимо от того, какие требования к стилю, цвету или текстуре у вас могут быть, у нас вы
+                        обязательно найдете подходящий ламинат для вашего интерьера.
+
+                        Наш магазин предлагает широкий спектр ламинатных покрытий от ведущих производителей со всего
+                        мира.
+                        Вы сможете выбрать из множества вариантов, включая натуральные древесные оттенки, современные
+                        ультрафиолетовые покрытия, а также эксклюзивные дизайнерские решения.
+
+                        Посетите наш магазин сегодня и убедитесь сами в нашем огромном выборе ламината!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-gray-100 py-20 relative">
+        <div class="bg-red-500 w-full h-[280px] absolute top-0 left-0 overflow-hidden">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+        </div>
+        <div class="container mx-auto">
+
+      
+
+            <div class="grid grid-cols-2  mb-10">
+
+
+                <h3 class="lg:text-[36px] font-bold uppercase text-[19px] relative z-50 text-white ">горячие предложения
+                </h3>
+
+                <div class="flex w-full items-center justify-end relative z-50">
+                    <div
+                        class="border border-white border-opacity-25 lg:w-[80px] w-[50px] flex items-center justify-center p-2 hover:bg-white prev hover:text-red-500 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+
+                    </div>
+                    <div
+                        class="border border-white border-opacity-25 lg:w-[80px] w-[50px] flex items-center justify-center p-2 ml-5 next hover:bg-white hover:text-red-500 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper relative z-50">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+
+
+
+
+
+
+
+
+                <div class="swiper-slide bg-white p-5 relative group hover:shadow-lg transition-all">
+                    <div class="relative overflow-hidden h-[300px]">
+                        <div class="bg-red-500 absolute top-2 left-2 z-50 text-white font-bold p-3 rounded-lg">Выгода
+                            5%</div>
+                        <img class="group-hover:scale-110 transition-all"
+                            src="https://images.satu.kz/184877167_w640_h640_184877167.jpg"
+                            alt="">
+                    </div>
+                    <h3 class="font-bold uppercase mt-5">Сосна Фрейя</h3>
+                    <p class="my-5">Размер: 1380 х 193
+                        Толщина планки: 8 мм
+
+                    </p>
+
+                    <div class="w-full flex items-center justify-between pb-5">
+                        <span class="font-bold uppercase text-[14px]">Бренд:</span>
+                        <img class="w-[80px]" src="img/logos/kastamonu2.jpg" alt="">
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold border-t border-gray-200 py-5 text-[14px]">
+                        <span class="uppercase">
+                            Цена за кв м:
+                        </span>
+                        <div class="div">
+                            <strike class="mr-3">3720 тг</strike>
+                            <span>2990 тг</span>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="border border-gray-200 mt-5 text-center px-5 hover:bg-red-500 hover:text-white uppercase font-bold transition-all cursor-pointer py-3">
+                        Заказать</div>
+                </div>
+
+
+                <div class="swiper-slide bg-white p-5 relative group hover:shadow-lg transition-all">
+                    <div class="relative overflow-hidden h-[300px]">
+                        <div class="bg-red-500 absolute top-2 left-2 z-50 text-white font-bold p-3 rounded-lg">Выгода
+                            20%</div>
+                        <img class="group-hover:scale-110 transition-all"
+                            src="https://shahty.kwadratura.ru/_mod_files/ce_images/eshop/extr/img_popup/dub_garden_natural_nyj_epl236_2.png"
+                            alt="">
+                    </div>
+                    <h3 class="font-bold uppercase mt-5">Дуб Гарден Натуральный</h3>
+                    <p class="my-5">Размер: 1292 х 193
+                        Толщина планки: 8 мм
+
+                    </p>
+
+                    <div class="w-full flex items-center justify-between pb-5">
+                        <span class="font-bold uppercase text-[14px]">Бренд:</span>
+                        <img class="w-[80px]" src="img/logos/Egger.jpg" alt="">
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold border-t border-gray-200 py-5 text-[14px]">
+                        <span class="uppercase">
+                            Цена за кв м:
+                        </span>
+                        <div class="div">
+                            <strike class="mr-3">6900 тг</strike>
+                            <span>4800 тг</span>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="border border-gray-200 mt-5 text-center px-5 hover:bg-red-500 hover:text-white uppercase font-bold transition-all cursor-pointer py-3">
+                        Заказать</div>
+                </div>
+
+
+
+                <div class="swiper-slide bg-white p-5 relative group hover:shadow-lg transition-all">
+                    <div class="relative overflow-hidden h-[300px]">
+                        <div class="bg-red-500 absolute top-2 left-2 z-50 text-white font-bold p-3 rounded-lg">Выгода
+                            10%</div>
+                        <img class="group-hover:scale-110 transition-all"
+                            src="https://images.satu.kz/204601445_w640_h640_204601445.jpg"
+                            alt="">
+                    </div>
+                    <h3 class="font-bold uppercase mt-5">Ясень Бриз</h3>
+                    <p class="my-5">Размер: 1380 х 195
+                        Толщина планки: 8 мм
+
+                    </p>
+
+                    <div class="w-full flex items-center justify-between pb-5">
+                        <span class="font-bold uppercase text-[14px]">Бренд:</span>
+                        <img class="w-[80px]" src="img/logos/kastamonu2.jpg" alt="">
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold border-t border-gray-200 py-5 text-[14px]">
+                        <span class="uppercase">
+                            Цена за кв м:
+                        </span>
+                        <div class="div">
+                            <strike class="mr-3">3800 тг</strike>
+                            <span>2890 тг</span>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="border border-gray-200 mt-5 text-center px-5 hover:bg-red-500 hover:text-white uppercase font-bold transition-all cursor-pointer py-3">
+                        Заказать</div>
+                </div>
+
+
+
+
+
+
+                <div class="swiper-slide bg-white p-5 relative group hover:shadow-lg transition-all">
+                    <div class="relative overflow-hidden h-[300px]">
+                        <div class="bg-red-500 absolute top-2 left-2 z-50 text-white font-bold p-3 rounded-lg">Выгода
+                            20%</div>
+                        <img class="group-hover:scale-110 transition-all"
+                            src="https://st48.stpulscen.ru/images/product/500/400/125_original.jpg"
+                            alt="">
+                    </div>
+                    <h3 class="font-bold uppercase mt-5">Дуб Мелба Коричневый</h3>
+                    <p class="my-5">Размер: 1292 х 193
+                        Толщина планки: 8 мм
+
+                    </p>
+
+                    <div class="w-full flex items-center justify-between pb-5">
+                        <span class="font-bold uppercase text-[14px]">Бренд:</span>
+                        <img class="w-[80px]" src="img/logos/Egger.jpg" alt="">
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold border-t border-gray-200 py-5 text-[14px]">
+                        <span class="uppercase">
+                            Цена за кв м:
+                        </span>
+                        <div class="div">
+                            <strike class="mr-3">6500 тг</strike>
+                            <span>4600 тг</span>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="border border-gray-200 mt-5 text-center px-5 hover:bg-red-500 hover:text-white uppercase font-bold transition-all cursor-pointer py-3">
+                        Заказать</div>
+                </div>
+
+
+
+                <div class="swiper-slide bg-white p-5 relative group hover:shadow-lg transition-all">
+                    <div class="relative overflow-hidden h-[300px]">
+                        <div class="bg-red-500 absolute top-2 left-2 z-50 text-white font-bold p-3 rounded-lg">Выгода
+                            20%</div>
+                        <img class="group-hover:scale-110 transition-all"
+                            src="https://pol154.ru/upload/iblock/554/554b22623792ece66725cb791dfeae87.JPG"
+                            alt="">
+                    </div>
+                    <h3 class="font-bold uppercase mt-5">Доска Ясеня Американского</h3>
+                    <p class="my-5">Размер: 1380 х 190
+                        Толщина планки: 8 мм
+
+                    </p>
+
+                    <div class="w-full flex items-center justify-between pb-5">
+                        <span class="font-bold uppercase text-[14px]">Бренд:</span>
+                        <img class="w-[80px]" src="img/logos/Quickstep.jpg" alt="">
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold border-t border-gray-200 py-5 text-[14px]">
+                        <span class="uppercase">
+                            Цена за кв м:
+                        </span>
+                        <div class="div">
+                            <strike class="mr-3">4500 тг</strike>
+                            <span>3500 тг</span>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="border border-gray-200 mt-5 text-center px-5 hover:bg-red-500 hover:text-white uppercase font-bold transition-all cursor-pointer py-3">
+                        Заказать</div>
+                </div>
+
+
+                
+                <div class="swiper-slide bg-white p-5 relative group hover:shadow-lg transition-all">
+                    <div class="relative overflow-hidden h-[300px]">
+                        <div class="bg-red-500 absolute top-2 left-2 z-50 text-white font-bold p-3 rounded-lg">Выгода
+                            20%</div>
+                        <img class="group-hover:scale-110 transition-all"
+                            src="https://st42.stpulscen.ru/images/product/525/315/201_original.jpg"
+                            alt="">
+                    </div>
+                    <h3 class="font-bold uppercase mt-5">Дуб Кестинкорт Мокко</h3>
+                    <p class="my-5">Размер: 1292 х 240
+                        Толщина планки: 8 мм
+
+                    </p>
+
+                    <div class="w-full flex items-center justify-between pb-5">
+                        <span class="font-bold uppercase text-[14px]">Бренд:</span>
+                        <img class="w-[80px]" src="img/logos/Egger.jpg" alt="">
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold border-t border-gray-200 py-5 text-[14px]">
+                        <span class="uppercase">
+                            Цена за кв м:
+                        </span>
+                        <div class="div">
+                            <strike class="mr-3">4500 тг</strike>
+                            <span>3500 тг</span>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="border border-gray-200 mt-5 text-center px-5 hover:bg-red-500 hover:text-white uppercase font-bold transition-all cursor-pointer py-3">
+                        Заказать</div>
+                </div>
+
+
+
+
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination mt-40"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar mt-10"></div> -->
+        </div>
+
+
+
+
+    </section>
+
+    <section class="bg-adver ">
+        <div class="container mx-auto">
+            <div class="flex items-center w-full  justify-center h-[600px]">
+
+
+                <div class="bg-white lg:w-1/2 p-5 flex flex-col items-center text-center justify-center">
+                    <h1 class="text-[36px] font-bold uppercase">Покажем реальные<br>
+                        образцы</h1>
+                    <p class="py-5 text-[20px] ">
+                        Оперативно вышлем фото в любой удобный<br> для Вас месседжер
+                    </p>
+
+                    <a href=""
+                        class="bg-red-500 px-5 text-center text-white px-5 py-3 w-full mt-5 uppercase font-bold text-[14px] rounded-full">Оставить
+                        заявку</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-20">
+        <div class="flex w-full items-center justify-center flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-14 h-14 bg-red-500 text-white rounded-full p-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+
+
+            <p class="text-center py-5 text-[20px] font-bold">
+                Мы находимся по адресу: г. Астана, Москоская 9а<br>
+                Наш электронный адрес:
+            </p>
+
+        </div>
+
+        <div class="grid lg:grid-cols-2">
+
+            <div>
+                <img src="img/lc2.jpg" alt="">
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1768.6343481869087!2d71.38761803383802!3d51.17804479296245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245873d5b993175%3A0x99c6bcaedd1fea2d!2z0YPQuy4gTdCw0YHQutC10YMgOWEsINCQ0YHRgtCw0L3QsCAwMjAwMDA!5e0!3m2!1sru!2skz!4v1708764759632!5m2!1sru!2skz"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="bg-blue-500 py-10">
+        <div class="container mx-auto">
+            <div class="flex lg:flex-row flex-col w-full items-center justify-between text-center font-bold text-white">
+                <p>
+                    СЕТЬ САЛОНОВ НАПОЛЬНЫХ ПОКРЫТИЙ
+                    
+                </p>
+
+                <div class="flex items-center border border-white rounded-full p-5 border-opacity-25 kg:mt-0 mt-5">
+                    <span>Построить маршрут</span>
+                    <img class="w-[50px] ml-5 text-white"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/c1/2GIS_logo.svg" alt="">
+                </div>
+
+
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+        <script>
+
+            var typed2 = new Typed('#typed-text', {
+                strings: ['влагостойкий', 'Качественный', 'Недорогой'],
+                typeSpeed: 60,
+                backSpeed: 20,
+                loop: true,
+                backDelay: 700,
+            });
+
+
+
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                speed: 600,
+                parallax: true,
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.next',
+                    prevEl: '.prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+
+                autoplay: {
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 20,
+                        centeredSlides: true,
+                    },
+                    // when window width is >= 480px
+                    480: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 5,
+                        spaceBetween: 40
+                    }
+                }
+            });
+        </script>
+    </footer>
+
+</body>
+
+</html>

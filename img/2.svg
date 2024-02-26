@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <path d="M352.553,290.14C373.663,252.269 384.22,233.333 400,233.333C415.78,233.333 426.337,252.269 447.447,290.14L452.91,299.937C458.907,310.699 461.907,316.08 466.583,319.63C471.26,323.18 477.087,324.498 488.737,327.134L499.34,329.534C540.337,338.81 560.833,343.447 565.71,359.13C570.587,374.81 556.613,391.15 528.667,423.833L521.433,432.287C513.493,441.573 509.523,446.217 507.737,451.963C505.95,457.707 506.55,463.903 507.75,476.293L508.843,487.573C513.07,531.177 515.18,552.98 502.413,562.67C489.647,572.363 470.457,563.527 432.073,545.853L422.143,541.28C411.233,536.26 405.78,533.747 400,533.747C394.22,533.747 388.767,536.26 377.857,541.28L367.927,545.853C329.545,563.527 310.353,572.363 297.586,562.67C284.819,552.98 286.931,531.177 291.157,487.573L292.25,476.293C293.45,463.903 294.051,457.707 292.264,451.963C290.478,446.217 286.507,441.573 278.565,432.287L271.335,423.833C243.387,391.15 229.414,374.81 234.29,359.13C239.167,343.447 259.664,338.81 300.659,329.534L311.265,327.134C322.914,324.498 328.739,323.18 333.417,319.63C338.093,316.08 341.093,310.699 347.09,299.937L352.553,290.14Z" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:50px;"/>
+    <path d="M400,66.667L400,133.333" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:50px;stroke-linecap:round;"/>
+    <path d="M400,666.667L400,733.333" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:50px;stroke-linecap:round;"/>
+    <path d="M66.667,400L133.333,400" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:50px;stroke-linecap:round;"/>
+    <path d="M666.667,400L733.333,400" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:50px;stroke-linecap:round;"/>
+    <path d="M200,600L211.435,588.567" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:50px;stroke-linecap:round;"/>
+    <path d="M588.557,211.442L600,200" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:50px;stroke-linecap:round;"/>
+    <path d="M600,600L588.567,588.567" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:50px;stroke-linecap:round;"/>
+    <path d="M211.442,211.442L200,200" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:50px;stroke-linecap:round;"/>
+</svg>
